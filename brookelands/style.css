@@ -1,0 +1,429 @@
+/* Reset default margin/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header section */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(20, 19, 19, 0.1);
+}
+
+/* Logo */
+.logo {
+    width: 190px;
+    height: auto;
+}
+
+.logo-white {
+    width: 170px;
+    height: 160px;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 90px;              /* spacing between links */
+    justify-content: flex-start; /* push links to the left */
+    margin-top: 10px;
+    padding-left: 20px;     /* optional: add space from the very left edge */
+}
+
+
+
+
+.nav-links a {
+    padding: 2px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #0a0a0a;
+    letter-spacing: 1px;
+    font-weight: 100;     /* Optional: makes it more visible */
+    text-transform: uppercase; /* Optional: makes all caps for cleaner spacing */
+
+}
+
+.nav-links a:hover {
+    background-color: #15ca42;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.top-image {
+  position: relative; /* Allows positioning inside */
+  text-align: left;
+}
+
+.top-image img {
+  width: 100%;
+  max-width: 1400px;
+  height: 500px;         /* Adjust as needed */
+  object-fit: cover;
+  display: block;
+}
+
+/* Text over image */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    color: white;
+    opacity: 0;
+    transform: translateX(-60px);
+    animation: slideFadeIn 2.5s ease-out forwards;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Animation */
+@keyframes slideFadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.line-quality {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.9em;
+    margin: 0 0 2px 0;
+}
+
+.line-drink {
+    font-family: 'Playfair Display', serif;
+    font-size: 5.4em;
+    font-weight: 700;
+    color: greenyellow;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.line-self {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 800;
+    color: greenyellow;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.tagline {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    font-weight: 1000;
+    color: rgb(46, 235, 249);
+    text-align: left;
+    padding: 20px 10px;
+    max-width: 800px;
+    margin: 10px;
+    line-height: 1.6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.tagline2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.9em;
+    font-weight: 1000;
+    color: rgb(1, 235, 252);
+    text-align: left;
+    padding: 0;
+    max-width: 800px;
+    margin-left: -5px;
+    margin-top: 0px;
+    line-height: 1.3;
+    border-radius: 0;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.gas-box {
+  position: absolute;
+  top: 400px;            /* ⬅️ Increased from 100px to 180px */
+  right: 20px;
+  background-color: #17ee77;
+  color: rgb(15, 15, 15);
+  font-size: 1.2em;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.gas-box:hover {
+  transform: scale(1.05);
+}
+/* Image groups */
+.second-image img,
+.third-image img,
+.fourth-image img,
+.fifth-image img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border: none;
+    background: transparent;
+}
+
+.all-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.all-images img {
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    background-color: transparent;
+    border: none;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.image-label p {
+    margin: 4px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+}
+
+/* Gas section */
+.gas-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #1a5c42;
+    text-decoration: underline;
+}
+
+.gas-section {
+  display: flex;
+  flex-wrap: wrap;             /* Ensures it wraps on smaller screens */
+  justify-content: center;
+  gap: 60px;                   /* Increase spacing between items */
+  margin-top: 50px;
+}
+
+.gas-item {
+  text-align: center;
+}
+
+.gas-item img {
+  width: 400px;                /* Increased image width */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);  /* Slightly deeper shadow */
+}
+
+.gas-label {
+    margin-top: 12px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1a3d2f;
+}
+
+/* Footer */
+.footer {
+    background: rgba(22, 54, 34, 0.95);
+    color: white;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+.logo-small {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-column h3 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #dcdcdc;
+}
+
+.footer-column i {
+    margin-right: 10px;
+    color: #1da1f2;
+}
+
+.footer-column a {
+    color: #f9f9f9;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #dcdcdc;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-item i {
+    color: #1da1f2;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+  /* Stack header items vertically */
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Resize logos */
+  .logo,
+  .logo-white {
+    width: 140px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Arrange nav links vertically */
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 1em;
+    padding: 8px 16px;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  /* Reduce top image height */
+  .top-image img {
+    height: 40vh;
+  }
+
+  /* Ensure text stays visible on image */
+  .image-text {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    font-size: 1em;
+    transform: none;
+    opacity: 1;
+  }
+
+  .line-drink {
+    font-size: 2.5em;
+  }
+
+  .line-self {
+    font-size: 1.5em;
+  }
+
+  /* Adjust gas box */
+  .gas-box {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 20px auto 0;
+    display: inline-block;
+  }
+
+  /* Display gas items in two per row */
+  .gas-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .gas-item {
+    width: 48%;
+    max-width: 48%;
+    margin-bottom: 20px;
+  }
+
+  .gas-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Stack footer content */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    max-width: 90%;
+    margin: 10px 0;
+  }
+}
